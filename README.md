@@ -143,3 +143,54 @@ A useful PR should include:
 - restore/verification story where applicable
 
 No receipt, no claim.
+
+## Highlights
+
+Rengrams is the repeated-structure microscope in the OKCompressor v4 proof stack.
+
+It scans OKC integer ID streams and emits deterministic SQLite receipts for repeated symbolic n-grams.
+
+Current public enwik7 proof:
+
+- n=4..9, min_freq=3
+- 766,561 repeated n-grams
+- 8,464,889 counted occurrences
+- 24.30s wall time
+- 663,680 KB max RSS
+- DB SHA256: `3227094888e2f3325f214d861fd133053aa03038cb03f5b4d352223b607616ce`
+
+Long-span sweep:
+
+- n=3..77, min_freq=3
+- 1,561,352 repeated n-grams
+- 16,917,643 counted occurrences
+- 9:19.94 wall time
+- 3,265,900 KB max RSS
+- DB SHA256: `6cfddd5a411ff2c280640e99c5ebea514702ad3f7a207747b1a4d486d28c2989`
+
+Rengrams is not a compressor by itself.
+
+It is a deterministic statistics layer for downstream reversible encoders such as Sentinel-style macro/sideband stages.
+
+## Historical scale notes
+
+Larger historical OKCompressor v3.7 Rengrams runs include enwik8 and enwik9 scale experiments.
+
+Those notes are preserved in:
+
+    docs/HISTORICAL_SCALE_NOTES.md
+
+They are roadmap/context notes unless their full receipts are copied into this repository.
+
+## Related work / adjacent tools
+
+Rengrams is adjacent to:
+
+- trie keyword replacers such as FlashText
+- classic n-gram language-model toolkits such as KenLM/SRILM
+- suffix-array / LCP deduplication systems
+- Python Counter baselines for small-prefix correctness checks
+
+The closest conceptual neighbor for the next stage is FlashText-style replacement: known phrases are matched and replaced efficiently.
+
+The difference is that Rengrams first discovers repeated symbolic sequences over OKC ID streams; Sentinel-style stages then decide which candidates become reversible macros.

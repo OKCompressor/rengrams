@@ -1,0 +1,4 @@
+artifact,sha256,bytes,role
+bin/ngram_sweeper_v0.1_OKCompressor_beta3.7z,b88734356a41bfa845a4116485407a3dc132fbaaba33835e39338d725c51dcda,1346024,canonical archive
+extracted/ngram_sweep,1945197dd3cad5a899215b12751edaeb3b9ee549fed702ccb8cb3070ad2a0acf,3960376,canonical extracted ELF
+extracted/ngram_sweep.upx,a25ce7bb04af93665f3b6a0d94d400658e9f9588e3bc444cf3908100bb7071df,1406476,optional UPX variant

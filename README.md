@@ -101,3 +101,45 @@ Rengrams is adjacent to KenLM/SRILM and suffix-array dedup systems, but it is no
 Rengrams produces deterministic repeated-symbolic-structure receipts over OKC integer streams for downstream reversible transforms.
 
 It is not itself a restore encoding.
+
+## Why this matters
+
+Rengrams is built for repeated symbolic structure, not generic text decoration.
+
+It scans OKC integer streams and emits deterministic SQLite receipts that can be inspected, hashed, compressed, and fed into downstream reversible macro/sideband encoders.
+
+The public enwik7 proof shows two useful operating modes:
+
+- short repeated-structure scout: n=4..9, min_freq=3, 24.30s wall time
+- long-span structure sweep: n=3..77, min_freq=3, 9:19.94 wall time
+
+This makes Rengrams useful as a corpus-structure microscope: fast enough for iteration, explicit enough for receipts, and long-range enough to expose repeated symbolic material that normal tokenizer views can leave tangled.
+
+## Comparators
+
+Rengrams is adjacent to several known tool families, but it is not identical to them.
+
+- KenLM / SRILM: classic n-gram language-model build/count workflows.
+- suffix-array / LCP dedup tools: repeated substring discovery and dataset deduplication.
+- Python Counter: small-prefix correctness reference.
+- SQLite insert baselines: storage/write-path comparison.
+
+Current public proof compares against an independent Python Counter reference on a 100k-token prefix.
+
+Full external comparator runs are TODO. Pull requests with receipts are welcome.
+
+## Pull request rule
+
+PRs are welcome if they preserve the receipts-first discipline.
+
+A useful PR should include:
+
+- exact command
+- input description
+- parameters
+- output hashes
+- timing receipt
+- machine notes
+- restore/verification story where applicable
+
+No receipt, no claim.

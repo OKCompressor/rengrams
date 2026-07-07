@@ -53,3 +53,17 @@ enwik9 chunked run, n=3..77, min_freq=3:
 These historical notes should not be treated as current public-release claims unless their receipts, hashes, commands, and machine notes are copied into this repository.
 
 Current public claims should reference `results/` in this repo.
+
+## FlashText / trie replacer relation
+
+FlashText is useful related work for the replacement side of the pipeline: it builds a trie of known keywords, scans input in one pass, prefers longest matches, and replaces known terms efficiently.
+
+Rengrams addresses the earlier discovery problem over OKC integer streams: which repeated symbolic sequences should become candidates?
+
+Sentinel Lite then demonstrates the reversible replacement/restoration contract over ID streams.
+
+So the public bridge is:
+
+    Rengrams discovers candidates.
+    Sentinel Lite replaces candidates.
+    Restore verifies exact recovery.

@@ -1,0 +1,5 @@
+run,input,n_min,n_max,min_freq,rows,sum_cnt,min_len,max_len,notes
+prefix_100k,enwik7_prefix_100k,4,9,3,12806,147394,4,9,matched Python reference summary
+prefix_1m,enwik7_prefix_1m,4,9,3,166628,1635045,4,9,scale sanity
+enwik7_n4_9,enwik7_full,4,9,3,766561,8464889,4,9,public short proof
+enwik7_n3_77,enwik7_full,3,77,3,1561352,16917643,3,77,long-span proof

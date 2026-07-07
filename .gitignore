@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+extracted/
+results/*.db
+results/*.npy
+results/*_indir/
+results/*_dump.tsv

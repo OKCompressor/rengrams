@@ -1,0 +1,11 @@
+Usage: ngram_sweep [OPTIONS]
+
+Options:
+      --indir <INDIR>                
+      --n-max <N_MAX>                [default: 9]
+      --n-min <N_MIN>                [default: 4]
+      --min-freq <MIN_FREQ>          [default: 3]
+      --sqlite-db <SQLITE_DB>        [default: ./ngrams_temp.db]
+      --merge-db-dir <MERGE_DB_DIR>  
+  -h, --help                         Print help
+  -V, --version                      Print version

@@ -1,0 +1,16 @@
+results/rengrams_enwik7_n3_77_f3_time_v.txt:	User time (seconds): 527.48
+results/rengrams_enwik7_n3_77_f3_time_v.txt:	System time (seconds): 25.54
+results/rengrams_enwik7_n3_77_f3_time_v.txt:	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:19.94
+results/rengrams_enwik7_n3_77_f3_time_v.txt:	Maximum resident set size (kbytes): 3265900
+results/rengrams_enwik7_n4_9_f3_time_v.txt:	User time (seconds): 20.14
+results/rengrams_enwik7_n4_9_f3_time_v.txt:	System time (seconds): 3.78
+results/rengrams_enwik7_n4_9_f3_time_v.txt:	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.30
+results/rengrams_enwik7_n4_9_f3_time_v.txt:	Maximum resident set size (kbytes): 663680
+results/rengrams_prefix_100k_time_v.txt:	User time (seconds): 0.24
+results/rengrams_prefix_100k_time_v.txt:	System time (seconds): 0.04
+results/rengrams_prefix_100k_time_v.txt:	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.34
+results/rengrams_prefix_100k_time_v.txt:	Maximum resident set size (kbytes): 25908
+results/rengrams_prefix_1m_time_v.txt:	User time (seconds): 4.83
+results/rengrams_prefix_1m_time_v.txt:	System time (seconds): 0.55
+results/rengrams_prefix_1m_time_v.txt:	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.48
+results/rengrams_prefix_1m_time_v.txt:	Maximum resident set size (kbytes): 179132
